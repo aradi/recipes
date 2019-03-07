@@ -169,25 +169,31 @@ finish almost immediately.
 Apart from the saved output file (`output`), you will find several other new
 files created by the code:
 
-`dftb_pin.hsd` Contains the parsed user input with all the default settings for
+`dftb_pin.hsd`
+  Contains the parsed user input with all the default settings for
   options which have not been explicitely set by the user. You should have look
   at it if you are unsure whether the defaults DFTB+ used for your calculation
   are appropriate, or if you want to know which other options you can use to
   adjust your calculation.
 
-`detailed.out` Contains detailed information about the calculated physical
+`detailed.out`
+  Contains detailed information about the calculated physical
   quantities (energies, forces, eigenlevels, fillings, charges, etc.)  obtained
   in the last SCC cycle performed.
 
-`band.out` Eigenvalues (in eV) and fillings for each k-point and spin channel.
+`band.out`
+  Eigenvalues (in eV) and fillings for each k-point and spin channel.
 
-`charges.bin` Charges of the atoms at the last iteration, stored in binary
+`charges.bin`
+  Charges of the atoms at the last iteration, stored in binary
   format. You can use this file to restart a calculation with those atomic
   charges.
 
-`geo_end.xyz`, `geo_end.gen` Final geometry in both XYZ and GEN formats.
+`geo_end.xyz`, `geo_end.gen`
+  Final geometry in both XYZ and GEN formats.
 
-`pdos.C.1.out`, `pdos.C.2.out` Output files containing the projected density of
+`pdos.C.1.out`, `pdos.C.2.out`
+  Output files containing the projected density of
   states for the first and second angular shells of carbon (in this case the
   *2s* and *2p* shells). Their format is similar to `band.out`.
 
